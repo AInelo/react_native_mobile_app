@@ -10,13 +10,13 @@ export default function Index() {
   const handleAddition = () => {
     const sum = parseFloat(num1) + parseFloat(num2);
     setResult(sum);
-    Keyboard.dismiss(); // Cacher le clavier après le calcul
+    Keyboard.dismiss();
   };
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-      <View className="flex-1 justify-center items-center bg-blue-700">  {/* Fond bleu */}
-        <View className="bg-white bg-opacity-20 p-6 rounded-lg w-11/12 items-center">
+      <View className="flex-1 justify-center items-center bg-slate-500"> 
+        <View className="h-[40vh] bg-white bg-opacity-20 p-6 rounded-[30px] w-11/12 items-center">
           <Text className="text-white text-3xl font-bold mb-5">Additionneur</Text>
 
           <TextInput
@@ -37,7 +37,7 @@ export default function Index() {
           />
 
           <TouchableOpacity
-            className="bg-green-500 py-3 px-8 rounded-lg mt-4"
+            className="bg-green-500 py-3 px-8 mt-4 rounded-[30px]"
             onPress={handleAddition}
           >
             <Text className="text-slate-800 text-lg font-bold">Additionner</Text>
