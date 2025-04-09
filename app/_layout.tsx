@@ -1,6 +1,7 @@
-import { Stack } from "expo-router";
-import { SafeAreaView, View, Text, StyleSheet, StatusBar } from "react-native";
 
-export default function RootLayout() {
-  return <Stack/>
+import { Stack } from 'expo-router';
+
+export default function Layout() {
+  // return <Stack/>;
+  return <></>;
 }
